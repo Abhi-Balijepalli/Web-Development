@@ -1,0 +1,143 @@
+/* Author: Abhi Balijepalli
+ * Email: balijepn@oregonstate.edu
+ * Assignment 2: implementing CSS, create a "tweeter" page
+ * 4/27/2020
+ */
+
+ body{
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(230, 235, 236);
+ }
+
+ .site-title{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: rgb(37, 157, 255);
+    color: #fff;
+ }
+ .navlist{
+    margin: 0 0 0 16px;
+    padding: 0
+ }
+ .navbar{
+    background-color: white;
+    font-size: 18px;
+    line-height: 8px;
+ }
+ .navitem{
+    display: inline-block;
+ }
+
+ a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+ }
+ 
+ p {
+    margin: 0;
+ }
+ .navlink a {
+    padding: 8px 10px;
+    display: inline-block;
+  }
+ .navlink {
+    padding: 8px 10px;
+    display: inline-block;
+  }
+  
+ .navitem {
+    display: inline-block;
+ }
+
+ a:hover{
+    color: #319df6;
+ }
+
+ .navlink.active {
+    box-shadow: inset 0 -3px rgb(37, 157, 255);
+  }
+
+ .navbar-search {
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+    line-height: 35px;
+  }
+  
+ #navbar-search-button {
+    margin-left: -5px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: grey;
+    cursor: pointer;
+  }
+  #navbar-search-input {
+   padding: 4px;
+   font-size: 14px;
+   background-color: rgb(231, 230, 230);
+   border-color: rgb(231, 230, 230);
+   border-radius: 2px;
+  }
+
+  #navbar-search-button:hover {
+   color: #319df6;
+  }
+
+ .twit-container {
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .twit{
+   flex: 0 1 28%;
+    background-color: white;
+    display: flex;
+    margin: 2px;
+    padding: 20px;
+    border: 1px white;
+    border-radius: 2px;
+ }
+ .twit-icon {
+    text-align: left;
+    font-size: 22px;
+ }
+  
+ .twit-content {
+    flex: 0 0 90%;
+    flex-wrap: nowrap;
+    display: inline-block;
+    margin-left: 10px;
+ }
+ .twit-author {
+    text-align: right;
+    font-weight: bold;
+ }
+
+ #create-twit-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 36px;
+    background-color:red;
+    color:white;
+    cursor: pointer;
+  }
+
+ #create-twit-button:hover{
+    right: 27px;
+    bottom: 27px;
+    height: 66px;
+    width: 66px;
+    border-radius: 33px;
+    font-size: 40px;
+    background-color:rgb(37, 157, 255) ;
+ }
